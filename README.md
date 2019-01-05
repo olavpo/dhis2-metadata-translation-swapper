@@ -1,4 +1,4 @@
-#DHIS2 metadata translation swapper
+# DHIS2 metadata translation swapper
 Tool for modifying translations of a DHIS2 metadata file, swapping a language available as a translation with the main language.
 
 ## Installation
