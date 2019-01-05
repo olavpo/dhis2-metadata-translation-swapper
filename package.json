@@ -1,0 +1,17 @@
+{
+  "name": "dhis2-metadata-translation-swapper",
+  "version": "1.0.0",
+  "description": "Tool for setting translations included in DHIS2 metadata as the main properties.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olav Poppe",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0"
+  }
+}
