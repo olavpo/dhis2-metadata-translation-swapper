@@ -14,7 +14,7 @@ async function run() {
 	let chosenLocale = await promptLocales(metadata, stats);
 	
 	let swappedMetadata = swapTranslations(metadata, chosenLocale.currentLocale, chosenLocale.newLocale);
-	saveFile(swappedMetadata, saveFilePath(metadataFilePath));
+	saveFile(swappedMetadata, saveFilePath(metadataFilePath, chosenLocale.newLocale));
 }
 
 /** CLI */
@@ -137,8 +137,8 @@ function filePath() {
 	}
 }
 
-function saveFilePath(filePath) {
-	return filePath.replace(".json", "_swapped.json");
+function saveFilePath(filePath, newLocale) {
+	return filePath.replace(".json", "_" + newLocale + ".json");
 }
 
 
